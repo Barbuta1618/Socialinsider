@@ -1,6 +1,6 @@
 FIRST STEPS AFTER CLONE REPOSITORY
 
-<h2>How to start the Backend</h2>
+<h2>How to start Backend</h2>
 <h3>Open backend directory</h3>
 
 1. Create a virtual environment and activate it:
@@ -16,7 +16,7 @@ FIRST STEPS AFTER CLONE REPOSITORY
 
     >flask run
 
-<h2>How to start the Frontend</h2>
+<h2>How to start Frontend</h2>
 <h3>Open frontend directory</h3>
 
 1. Install dependences
