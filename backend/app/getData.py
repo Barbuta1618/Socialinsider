@@ -90,7 +90,7 @@ def get_data_api():
 
     aux_dict = {}
 
-    # making a list of threads so we can execute all the requests in parallel 
+    # making a list of threads so we can execute all requests in parallel 
     thread_list = []
     for brand in brands:
         profiles = brand[1]
