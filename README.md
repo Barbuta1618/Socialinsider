@@ -6,7 +6,7 @@ FIRST STEPS AFTER CLONE REPOSITORY
 1. Create a virtual environment and activate it:
 
     >python3 -m venv venv
-    >source venv/bin/activate
+    >>source venv/bin/activate
 
 2. Install dependences
 
