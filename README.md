@@ -5,25 +5,25 @@ FIRST STEPS AFTER CLONE REPOSITORY
 
 1. Create a virtual environment and activate it:
 
-    python3 -m venv venv
-    source venv/bin/activate
+    >python3 -m venv venv
+    >source venv/bin/activate
 
 2. Install dependences
 
-    pip install -r requirements.txt
+    >pip install -r requirements.txt
 
 3. Launch application
 
-    flask run
+    >flask run
 
 <h2>How to start the Frontend</h2>
 <h3>Open frontend directory</h3>
 
 1. Install dependences
 
-    npm install
+    >npm install
 
 2. Launch application
 
-    npm start
+    >npm start
 
