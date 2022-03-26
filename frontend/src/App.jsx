@@ -14,7 +14,7 @@ function App() {
     let startDate = date['startDate'].getTime()
     let endDate = date['endDate'].getTime()
 
-    if(startDate == null || endDate == null)
+    if(startDate == null || endDate == null || startDate == endDate)
       alert("Please insert a valid range!")
 
     let url = "http://localhost:5000/getData"
