@@ -14,16 +14,19 @@ function App() {
     let startDate = date['startDate'].getTime()
     let endDate = date['endDate'].getTime()
 
-    if(startDate == null || endDate == null || startDate == endDate)
+    if(date['endDate'] > new Date() || startDate == endDate){
       alert("Please insert a valid range!")
+      return;
+    }
 
-    let url = "http://localhost:5000/getData"
+    let url = "https://socialinsider-backend.herokuapp.com/getData" 
     let data = {
       start: startDate,
       end: endDate
     }
 
     axios.post(url, data, {
+      crossDomain: true,
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json;charset=UTF-8",

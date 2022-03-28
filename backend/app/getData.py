@@ -8,7 +8,6 @@ getData = Blueprint('getData', __name__)
 
 
 CORS(getData)
-cors = CORS(getData, resources={r"/getData": {"origins": "*"}})
 
 url = 'https://app.socialinsider.io/api'
 headers = {
@@ -55,7 +54,8 @@ def get_profile_data(id, profile_type, my_list, start_time, end_time):
             pass
     my_list.append([total_engagement, fans])
 
-@getData.route('/getData', methods = ["POST", "GET"])
+@getData.route('/getData', methods = ["POST"])
+@cross_origin()
 def get_data_api():
 
 
@@ -124,4 +124,5 @@ def get_data_api():
             'totalProfiles': item[0]
         })
 
-    return make_response(jsonify(final_data))
+    response = jsonify(final_data)
+    return response
